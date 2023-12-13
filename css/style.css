@@ -371,4 +371,73 @@ filter: blur(150px);
 }
 
 /*Projetos*/
+/* Default styles */
+
+/* ... Your existing styles ... */
+
+/* Media queries for responsiveness */
+
+/* Extra small devices (phones) */
+@media screen and (max-width: 575px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .navItems li a {
+        font-size: 20px;
+    }
+
+    .wrapper {
+        padding: 0 5%;
+    }
+
+    .cols,
+    .cols-0 {
+        width: 100%;
+    }
+
+    .topline {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .btns {
+        left: 0;
+    }
+
+    .imgBox {
+        left: 0;
+    }
+
+    .imgBox img {
+        width: 100%;
+        right: 0;
+    }
+}
+
+
+/* Small devices (landscape phones) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    /* Adjustments for small landscape phones */
+}
+
+/* Medium devices (tablets) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Adjustments for medium-sized devices */
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Adjustments for large desktops */
+}
+
+/* Extra large devices (large desktops) */
+@media screen and (min-width: 1200px) {
+    /* Adjustments for extra-large desktops */
+}
+
+/* You can add more breakpoints as needed */
 
