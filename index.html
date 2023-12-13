@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="css/style.css">
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">DevMat<b>.</b></div>
+            <ul class="navItems">
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
+            </ul>
+            <div class="links">
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+        </nav>
+
+
+        <div class="wrapper">
+            <div class="cols cols-0">
+                <span class="topline">Olá</span>
+                <h1>I'm <span class="multiText"></span></h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam excepturi illum laboriosam exercitationem distinctio ex error fugit. Optio iusto eos illo. Atque, consectetur laborum! Totam rem nihil ullam temporibus.</p>
+                <div class="btns">
+                    <button>Dowload Cv</button>
+                    <button>Hire Me</button>
+                </div>
+            </div>
+            <div class="cols cols-1">
+                <div class="imgBox">
+                    <img src="img/spllash.png" id="splash">
+                    <img src="img/328767739_620906543382440_6727121539204038399_n-removebg-preview.png" id="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-sobre" id="sobre">
+        <div class="sobre">
+               <h1>Sobre</h1>
+        </div>
+        
+        <section id="sobre" class="white-bg section">
+            <div class="main-content sobre-content">
+                <P>As linguagens de programação são linguagens usadas para a comunicação com o computador. Estas linguagens são constituídas de comandos, que quando utilizados corretamente, executam uma ação. A programação nos computadores não tem uma data correta de início. Tudo começou na década de 30, com os primeiros computadores elétricos. Em 1948, Konrad Zuse publicou sua criação, a linguagem de programação Plankalkül. Na época, ainda não tinha muita utilidade, então foi esquecida. Antes da programação passar para o computador, eram usados cartões de papelão que eram perfurados, criando códigos.</P>
+                <p>Foi na década de 50 que as primeiras linguagens modernas surgiram. FORTRAN (1955), LISP, a "List Processor” e COBOL, a COmmon Business Oriented Language.  Tambem apareceu na mesma epoca a ALGOL 60.
+                Foi na década de 50 que as primeiras linguagens modernas surgiram. FORTRAN (1955), LISP, a "List Processor” e COBOL, a COmmon Business Oriented Language.  Tambem apareceu na mesma epoca a ALGOL 60.
+                </p>
+            </div>
+        </section>
+            
+        
+    </div>   
+        <section class="linguagens" id="linguagens">
+                
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+
+            <ul>
+                <li><a href="#"><ion-icon name="logo-javascript"></ion-icon></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-css3"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-html5"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-react"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-nodejs"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+            </ul>                   
+        </section>    
+              
+
+            
+   
+            <script>
+                const collapse = document.querySelectorAll('.accordtionTop');
+                const myAccordtion = document.querySelector('.accordtion');
+
+                    Array.from(collapse).forEach(function (e) {
+                        e.addEventListener('click', function (e) {
+                            myAccordtion.style.transition = "all 0.3s";
+                            const current = e.target.parentElement;
+                            current.classList.toggle('active')
+                        })
+                    })
+            </script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings : ["coder", "Tecnico", "DevJr"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay: 1500,
+        })
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
